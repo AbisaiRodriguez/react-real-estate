@@ -1,18 +1,18 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
+import Header from './Header.js'
 
 class App extends Component {
   constructor () {
     super()
     this.state = {
-      name: 'Joe'
+      name: 'Abisai'
     }
   }
-  clickedBtn = () => {
-    console.log('swag')
-  }
   render () {
-    return (<div> Real Estate </div>)
+    return (<div> 
+              <Header /> 
+            </div>)
   }
 }
 
