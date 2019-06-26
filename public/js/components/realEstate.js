@@ -97,6 +97,50 @@ var Filter = function (_Component) {
           ),
           _react2.default.createElement('input', { type: 'text', name: 'min-floorSpace', className: 'minFloorSpace' }),
           _react2.default.createElement('input', { type: 'text', name: 'max-floorSpace', className: 'maxFloorSpace' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'filters extras' },
+          _react2.default.createElement(
+            'label',
+            { 'for': 'extras' },
+            _react2.default.createElement(
+              'span',
+              null,
+              'Elevators'
+            ),
+            _react2.default.createElement('input', { name: 'extras', value: 'elevator', type: 'checkbox' })
+          ),
+          _react2.default.createElement(
+            'label',
+            { 'for': 'extras' },
+            _react2.default.createElement(
+              'span',
+              null,
+              'Swimming Pool'
+            ),
+            _react2.default.createElement('input', { name: 'extras', value: 'swimming-pool', type: 'checkbox' })
+          ),
+          _react2.default.createElement(
+            'label',
+            { 'for': 'extras' },
+            _react2.default.createElement(
+              'span',
+              null,
+              'Finished Basement'
+            ),
+            _react2.default.createElement('input', { name: 'extras', value: 'finished-basement', type: 'checkbox' })
+          ),
+          _react2.default.createElement(
+            'label',
+            { 'for': 'extras' },
+            _react2.default.createElement(
+              'span',
+              null,
+              'Gym'
+            ),
+            _react2.default.createElement('input', { name: 'extras', value: 'gym', type: 'checkbox' })
+          )
         )
       );
     }

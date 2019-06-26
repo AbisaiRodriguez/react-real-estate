@@ -29,6 +29,24 @@ export default class Filter extends Component {
         <input type="text" name="min-floorSpace" className="minFloorSpace" />
         <input type="text" name="max-floorSpace" className="maxFloorSpace" />
       </div>
+      <div className="filters extras">
+        <label for="extras">
+          <span>Elevators</span>
+          <input name="extras" value="elevator" type="checkbox" />
+        </label>
+        <label for="extras">
+          <span>Swimming Pool</span>
+          <input name="extras" value="swimming-pool" type="checkbox" />
+        </label>
+        <label for="extras">
+          <span>Finished Basement</span>
+          <input name="extras" value="finished-basement" type="checkbox" />
+        </label>
+        <label for="extras">
+          <span>Gym</span>
+          <input name="extras" value="gym" type="checkbox" />
+        </label>
+      </div>
     </section>)
   }
 }
