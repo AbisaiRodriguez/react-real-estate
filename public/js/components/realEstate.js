@@ -44,7 +44,60 @@ var Filter = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'filter' },
-        'Filter'
+        _react2.default.createElement(
+          'h4',
+          null,
+          'Filter'
+        ),
+        _react2.default.createElement(
+          'select',
+          { name: 'neighborhood', className: 'filters neighborhood' },
+          _react2.default.createElement(
+            'option',
+            null,
+            'Ridgewood'
+          )
+        ),
+        _react2.default.createElement(
+          'select',
+          { name: 'houseType', className: 'filters houseType' },
+          _react2.default.createElement(
+            'option',
+            null,
+            'Ranch'
+          )
+        ),
+        _react2.default.createElement(
+          'select',
+          { name: 'bedrooms', className: 'filters bedrooms' },
+          _react2.default.createElement(
+            'option',
+            null,
+            '2 BR'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'filters price' },
+          _react2.default.createElement(
+            'span',
+            { className: 'title' },
+            'Price'
+          ),
+          _react2.default.createElement('input', { type: 'text', name: 'min-price', className: 'minPrice' }),
+          _react2.default.createElement('input', { type: 'text', name: 'max-price', className: 'maxPrice' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'filters floorSpace' },
+          _react2.default.createElement(
+            'span',
+            { className: 'title' },
+            'Floor Space'
+          ),
+          _react2.default.createElement('input', { type: 'text', name: 'min-floorSpace', className: 'minFloorSpace' }),
+          _react2.default.createElement('input', { type: 'text', name: 'max-floorSpace', className: 'maxFloorSpace' })
+        )
       );
     }
   }]);
