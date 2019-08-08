@@ -290,7 +290,85 @@ var Listings = function (_Component) {
       return _react2.default.createElement(
         'section',
         { className: 'listings' },
-        'Listings'
+        _react2.default.createElement(
+          'section',
+          { className: 'searchArea' },
+          _react2.default.createElement('input', { type: 'text', name: 'search' })
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'sortByArea' },
+          _react2.default.createElement(
+            'div',
+            null,
+            '390 Results Found'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'sortOptions' },
+            _react2.default.createElement(
+              'select',
+              { name: 'sortBy', className: 'sortBy' },
+              _react2.default.createElement(
+                'option',
+                { value: 'priceAsc' },
+                'Highest Price'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'priceDsc' },
+                'Lowest Price'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'view' },
+              _react2.default.createElement('i', { className: 'fas fa-th-list' }),
+              _react2.default.createElement('i', { className: 'fas fa-th' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'section',
+          { className: 'listingsResults' },
+          _react2.default.createElement(
+            'div',
+            { className: 'listing' },
+            _react2.default.createElement(
+              'div',
+              { className: 'listing-img' },
+              _react2.default.createElement(
+                'span',
+                { className: 'Address' },
+                'Address'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'details' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'user-img' },
+                  ' '
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'user-details' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'user-name' },
+                    'Nina Smith'
+                  ),
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'post-date' },
+                    '05/08/2017'
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement('section', { className: 'pagination' })
       );
     }
   }]);
